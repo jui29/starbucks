@@ -48,9 +48,9 @@
 
 </div>
 <ul class="imgtag">
-<li><img src="assets/img/thumb1.png" onclick="imgSlider('green');changeCircleColor('green')"></li>
-<li><img  src="assets/img/thumb2.png" onclick="imgSlider('pink');changeCircleColor('pink')" ></li>
-<li><img src="assets/img/thumb3.png" onclick="imgSlider('gray');changeCircleColor('gray')"></li>
+<li><img src="assets/img/thumb1.png" onclick="imgSlider('green') ;changeCircleColor('#017143')"></li>
+<li><img  src="assets/img/thumb2.png" onclick="imgSlider('pink') ;changeCircleColor('#eb7494')" ></li>
+<li><img src="assets/img/thumb3.png" onclick="imgSlider('gray') ;changeCircleColor('#d752b1')"></li>
 </ul>
 
 <ul class="icon">
@@ -62,7 +62,18 @@
 
 
 
+<script>
+  function changeCircleColor(color){
+     const circle = document.querySelector('.circle');
+     circle.style.background = color;
 
+
+  }
+
+
+
+
+</script>
 
 
 
